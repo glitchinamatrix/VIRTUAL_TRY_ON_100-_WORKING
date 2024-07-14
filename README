@@ -1,0 +1,62 @@
+# Virtual Try-On with Pose Detection
+
+This project is a virtual try-on application that uses pose detection to overlay clothing images on a person's body in real-time. The application captures video, detects body poses using OpenCV and cvzone, and overlays a shirt image based on the detected pose.
+
+## Features
+
+- Real-time video capture and processing.
+- Pose detection using the cvzone library.
+- Overlay of shirt images on detected body pose.
+
+## Installation
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/yourusername/virtual-tryon.git
+    cd virtual-tryon
+    ```
+
+2. Create a virtual environment:
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. Install the required packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. Ensure you have your video file in the `Resource/video` directory and shirt images in the `Resource/shirts` directory.
+2. Run the application:
+
+    ```bash
+    python shirt_tryon.py
+    ```
+
+## Files
+
+- `shirt_tryon.py`: The main application script.
+- `requirements.txt`: The list of required Python packages.
+- `Resource/video`: Directory containing the input video file(s).
+- `Resource/shirts`: Directory containing the shirt image(s).
+
+## Example
+
+Here's an example of how the application works:
+
+![Example](path_to_your_example_image.png)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [cvzone](https://github.com/cvzone/cvzone) for the pose detection library.
+- [OpenCV](https://opencv.org/) for computer vision functionalities.
